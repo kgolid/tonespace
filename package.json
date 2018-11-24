@@ -1,0 +1,25 @@
+{
+  "name": "tonespace",
+  "version": "1.0.0",
+  "description": "A grid of grouped colours taken from Chromotome.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "keywords": [
+    "color",
+    "gradient",
+    "generative",
+    "random"
+  ],
+  "author": "Kjetil Golid",
+  "license": "MIT",
+  "dependencies": {
+    "chromotome": "^1.0.4"
+  },
+  "devDependencies": {
+    "rollup": "^0.67.3",
+    "rollup-plugin-node-resolve": "^3.4.0"
+  }
+}
