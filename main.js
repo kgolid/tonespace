@@ -2,13 +2,13 @@ import * as tome from 'chromotome';
 import * as utils from './utils';
 
 const reversed = true;
-const expand_diagonal = true;
-const selection_size = 5;
-const expansion_candidates = 2;
-const speed = 200;
+const expand_diagonal = false;
+const selection_size = 3;
+const expansion_candidates = 5;
+const speed = 2;
 
-const grid_dim = 5;
-const cell_size = 60;
+const grid_dim = 10;
+const cell_size = 50;
 const cell_padding = 4;
 const palette = tome.get('present-correct').colors.map(utils.hexToRgb);
 
