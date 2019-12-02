@@ -41,12 +41,7 @@ let sketch = function(p) {
     start.filled = true;
     start.dist = 0;
 
-    candidates = utils.expandNeighborhood(
-      [startPos],
-      startPos,
-      space,
-      expand_diagonal
-    );
+    candidates = utils.expandNeighborhood([startPos], startPos, space, expand_diagonal);
     tick++;
   };
 
@@ -62,8 +57,7 @@ let sketch = function(p) {
       }
     }
     if (tick + speed < grid_dim * grid_dim) placePixels(speed);
-    else if (tick < grid_dim * grid_dim)
-      placePixels(grid_dim * grid_dim - tick);
+    else if (tick < grid_dim * grid_dim) placePixels(grid_dim * grid_dim - tick);
     tick += speed;
   };
 

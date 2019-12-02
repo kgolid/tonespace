@@ -304,12 +304,7 @@
       start.filled = true;
       start.dist = 0;
 
-      candidates = expandNeighborhood(
-        [startPos],
-        startPos,
-        space,
-        expand_diagonal
-      );
+      candidates = expandNeighborhood([startPos], startPos, space, expand_diagonal);
       tick++;
     };
 
@@ -325,8 +320,7 @@
         }
       }
       if (tick + speed < grid_dim * grid_dim) placePixels(speed);
-      else if (tick < grid_dim * grid_dim)
-        placePixels(grid_dim * grid_dim - tick);
+      else if (tick < grid_dim * grid_dim) placePixels(grid_dim * grid_dim - tick);
       tick += speed;
     };
 
